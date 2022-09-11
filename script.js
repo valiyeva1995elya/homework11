@@ -23,7 +23,7 @@ for( let i = 1; i < 100 + 1; i ++){
 
 function str(){
   let a = prompt("введите слова");
-  a = a.toLowerCase().replace(/ /g,'');
+  a = a.toLowerCase().replace(/[^a-z0-9]+/g,'');
   let b = a.split("");
   b.reverse();
   b = b.join("");
